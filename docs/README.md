@@ -1,4 +1,3 @@
-# terraform-provider-graylog.github.io
+# terraform-provider-graylog
 
-Document of terraform-provider-graylog
-This document is powered by [Docsify](https://docsify.js.org).
+Document of [terraform-provider-graylog](https://github.com/terraform-provider-graylog/terraform-provider-graylog)
