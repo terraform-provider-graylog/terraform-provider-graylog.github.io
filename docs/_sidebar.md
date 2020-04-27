@@ -1,5 +1,8 @@
 * [Home](/)
 * [Provider Configuration](provider.md)
+* Migration from go-graylog
+  * [Migration Guide Overview](migration/migration_guide.md)
+  * [Migration Guide Detail](migration/migration_guide_detail.md)
 * Data Source
   * [graylog_dashboard](data-sources/dashboard.md)
   * [graylog_index_set](data-sources/index_set.md)
