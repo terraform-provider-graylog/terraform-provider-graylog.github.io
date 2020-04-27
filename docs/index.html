@@ -13,7 +13,12 @@
   <script>
     window.$docsify = {
       name: '',
-      repo: ''
+      repo: '',
+      loadSidebar: true, // https://docsify.js.org/#/more-pages?id=sidebar
+      subMaxLevel: 2,
+      alias: { // https://docsify.now.sh/configuration?id=alias
+        '/.*/_sidebar.md': '/_sidebar.md', // https://docsify.js.org/#/more-pages?id=nested-sidebars
+      },
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
