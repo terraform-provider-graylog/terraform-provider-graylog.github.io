@@ -22,5 +22,11 @@
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <!-- https://docsify.js.org/#/language-highlight -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-hcl.min.js"></script>
+  <script>
+    // https://prismjs.com/extending.html#creating-a-new-language-definition
+    Prism.languages.tf = Prism.languages.hcl
+  </script>
 </body>
 </html>
