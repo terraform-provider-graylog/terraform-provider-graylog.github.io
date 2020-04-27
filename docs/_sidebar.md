@@ -1,5 +1,9 @@
 * [Home](/)
 * [Provider Configuration](provider.md)
+* Data Source
+  * [graylog_dashboard](data-sources/dashboard.md)
+  * [graylog_index_set](data-sources/index_set.md)
+  * [graylog_stream](data-sources/stream.md)
 * Resource
   * [graylog_alarm_callback](resources/alarm_callback.md)
   * [graylog_alert_condition](resources/alert_condition.md)
