@@ -1,8 +1,10 @@
 * [Home](/)
 * [Provider Configuration](provider.md)
+* [JSON string attribute](json-string-attribute.md)
 * Migration from go-graylog
-  * [Migration Guide Overview](migration/migration_guide.md)
-  * [Migration Guide Detail](migration/migration_guide_detail.md)
+  * [What is changed?](migration/what-is-changed.md)
+  * [Migration Guide Overview](migration/guide.md)
+  * [Migration Guide Detail](migration/detail.md)
 * Data Source
   * [graylog_dashboard](data-sources/dashboard.md)
   * [graylog_index_set](data-sources/index_set.md)

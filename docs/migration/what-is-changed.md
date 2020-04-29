@@ -2,14 +2,10 @@
 
 In this page, we describe what is changed from [go-graylog](https://github.com/suzuki-shunsuke/go-graylog) to this provider.
 
-If you just want to use this provider, you don't have to read this page.
-
 ## Changes
 
 * Increase [Acceptance Tests](https://www.terraform.io/docs/extend/testing/acceptance-tests/index.html)
-* Use JSON string positiely
-  * We don't have to handle the difference of data structure by type
-  * We can support third party plugins without additinal development
+* [Use JSON string positively](/json-string-attribute)
 * Make the development much easier than go-graylog by design change
 
 ## Design changes
@@ -35,5 +31,3 @@ We found that intermediation of Go's struct is unneeded, and it is much easier t
 ```
 Graylog API (JSON) <=> Terraform ResourceData
 ```
-
-Unlike Go's struct, we can automate the operation against Go's map without reflection.

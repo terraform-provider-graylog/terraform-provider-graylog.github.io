@@ -1,7 +1,6 @@
 # Migration Guide
 
-In this document, we describe the overview of how to migrate Terraform provider from [go-graylog v11.3.0](https://github.com/suzuki-shunsuke/go-graylog/tree/v11.3.0) to this provider.
-
+In this page, we describe the overview of how to migrate Terraform provider from [go-graylog v11.3.0](https://github.com/suzuki-shunsuke/go-graylog/tree/v11.3.0) to this provider.  
 Unfortunately there are some breaking changes between go-graylog and terraform-provider-graylog, so
 we have to fix Terraform configuration files (.tf) manually.
 
@@ -88,4 +87,4 @@ The schema of Terraform State is also changed, but Terraform supports the state 
 https://www.terraform.io/docs/extend/resources/state-migration.html
 
 We implement `StateUpgrades`, so state is migrated automatically.
-If you encounter the trouble about state migration, please [create an issue](https://github.com/suzuki-shunsuke/terraform-provider-graylog/issues/new).
+If you encounter the trouble about state migration, please [create an issue](https://github.com/terraform-provider-graylog/terraform-provider-graylog/issues/new).

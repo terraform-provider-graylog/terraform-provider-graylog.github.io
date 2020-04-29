@@ -1,7 +1,7 @@
 # graylog_alarm_callback
 
-* [Example](../../examples/v0.12/alarm_callback.tf)
-* [Source Code](../../graylog/resource/stream/alarmcallback/resource.go)
+* [Example](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/examples/v0.12/alarm_callback.tf)
+* [Source Code](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/graylog/resource/stream/alarmcallback/resource.go)
 
 ## Argument Reference
 
