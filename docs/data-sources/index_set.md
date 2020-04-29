@@ -1,7 +1,7 @@
 # Data source graylog_index_set
 
-* [Example](../../examples/v0.12/index_set.tf)
-* [Source Code](../../graylog/datasource/system/indices/indexset/data_source.go)
+* [Example](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/examples/v0.12/index_set.tf)
+* [Source Code](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/graylog/datasource/system/indices/indexset/data_source.go)
 
 ## Required Argument
 

@@ -1,7 +1,7 @@
 # graylog_input
 
-* [Example](../../examples/v0.12/input.tf)
-* [Source Code](../../graylog/resource/system/input/resource.go)
+* [Example](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/examples/v0.12/input.tf)
+* [Source Code](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/graylog/resource/system/input/resource.go)
 
 ## Argument Reference
 

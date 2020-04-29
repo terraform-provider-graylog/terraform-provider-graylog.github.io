@@ -1,7 +1,7 @@
 # Data source graylog_stream
 
-* [Example](../../examples/v0.12/stream.tf)
-* [Source Code](../../graylog/datasource/stream/data_source.go)
+* [Example](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/examples/v0.12/stream.tf)
+* [Source Code](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/graylog/datasource/stream/data_source.go)
 
 ## Required Argument
 

@@ -1,6 +1,6 @@
 # Data source graylog_dashboard
 
-* [Source Code](../../graylog/datasource/dashboard/resource.go)
+* [Source Code](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/graylog/datasource/dashboard/resource.go)
 
 ```tf
 data "graylog_dashboard" "test" {

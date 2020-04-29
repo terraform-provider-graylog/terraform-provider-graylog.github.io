@@ -1,7 +1,7 @@
 # graylog_role
 
-* [Example](../../examples/v0.12/role.tf)
-* [Source Code](../../graylog/resource/role/resource.go)
+* [Example](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/examples/v0.12/role.tf)
+* [Source Code](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/graylog/resource/role/resource.go)
 
 ## Argument Reference
 

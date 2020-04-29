@@ -22,7 +22,7 @@ None
 
 `configuration` is a JSON string whose type is `object`.
 The data structure of JSON is different per AlarmCallback `type`.
-Please see the [example](../../examples/v0.12/alarm_callback.tf).
+Please see the [example](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/examples/v0.12/alarm_callback.tf).
 
 ## Attributes Reference
 

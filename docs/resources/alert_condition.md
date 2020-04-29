@@ -1,7 +1,7 @@
 # graylog_alert_condition
 
-* [Example](../../examples/v0.12/alert_condition.tf)
-* [Source Code](../../graylog/resource/stream/alert/condition/resource.go)
+* [Example](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/examples/v0.12/alert_condition.tf)
+* [Source Code](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/graylog/resource/stream/alert/condition/resource.go)
 
 ## Argument Reference
 
@@ -24,7 +24,7 @@ in_grace | false | bool
 
 `parameters` is a JSON string whose type is `object`.
 The data structure of JSON is different per AlertCondition `type`.
-Please see the [example](../../examples/v0.12/alert_condition.tf).
+Please see the [example](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/examples/v0.12/alert_condition.tf).
 
 ### Attributes Reference
 

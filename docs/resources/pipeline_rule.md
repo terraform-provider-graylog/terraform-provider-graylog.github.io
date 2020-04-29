@@ -1,7 +1,7 @@
 # graylog_pipeline_rule
 
-* [Example](../../examples/v0.12/pipeline.tf)
-* [Source Code](../../graylog/resource/system/pipeline/rule/resource.go)
+* [Example](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/examples/v0.12/pipeline.tf)
+* [Source Code](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/graylog/resource/system/pipeline/rule/resource.go)
 
 ## Argument Reference
 
