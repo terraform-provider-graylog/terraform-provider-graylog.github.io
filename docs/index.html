@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      // https://docsify.now.sh/configuration
+      name: 'terraform-provider-graylog',
+      repo: 'terraform-provider-graylog/terraform-provider-graylog',
+      auto2top: true,
+      loadSidebar: true, // https://docsify.js.org/#/more-pages?id=sidebar
+      subMaxLevel: 2,
+      alias: { // https://docsify.now.sh/configuration?id=alias
+        '/.*/_sidebar.md': '/_sidebar.md', // https://docsify.js.org/#/more-pages?id=nested-sidebars
+      },
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <!-- https://docsify.js.org/#/language-highlight -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-hcl.min.js"></script>
+  <script>
+    // https://prismjs.com/extending.html#creating-a-new-language-definition
+    Prism.languages.tf = Prism.languages.hcl
+  </script>
+</body>
+</html>
