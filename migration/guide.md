@@ -57,6 +57,14 @@ configuration = <<EOF
 EOF
 ```
 
+By [jsonencode](https://www.terraform.io/docs/configuration/functions/jsonencode.html), you can migrate more easily.
+
+```tf
+configuration = jsonencode({
+  url = "https://example.com"
+})
+```
+
 ### Resource ID
 
 For example, at `go-graylog` `graylog_alarmcallback`'s `id` is `<AlarmCallback's id>`.

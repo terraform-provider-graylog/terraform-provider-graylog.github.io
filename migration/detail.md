@@ -45,11 +45,9 @@ http_configuration {
 TO BE
 
 ```tf
-configuration = <<EOF
-{
-  "url": "http://example.com"
-}
-EOF
+configuration = jsonencode({
+  url = "https://example.com"
+})
 ```
 
 ### Change the attribute `.id` to `.alarmcallback_id`
@@ -98,8 +96,14 @@ field_content_value_parameters {
 TO BE
 
 ```tf
-parameters = <<EOF
-EOF
+parameters = jsonencode({
+  field                = "message"
+  value                = "hoge hoge"
+  backlog              = 2
+  repeat_notifications = false
+  query                = "*"
+  grace                = 0
+})
 ```
 
 ### Change the attribute `.id` to `.alert_condition_id`
@@ -152,8 +156,18 @@ quick_values_histogram_configuration {
 TO BE
 
 ```tf
-config = <<EOF
-EOF
+config = jsonencode({
+  timerange = {
+    type = "relative"
+    range = 28800
+  }
+  stream_id = "5b3983000000000000000000"
+  query = "status:200"
+  field = "status"
+  limit = 5
+  sort_order = "desc"
+  stacked_fields = ""
+})
 ```
 
 ### Change the attribute `.id` to `.widget_id`
@@ -197,22 +211,20 @@ positions {
 TO BE
 
 ```tf
-positions = <<EOF
-{
-  "${graylog_dashboard_widget.test2.widget_id}": {
-    "width": 2,
-    "col": 1,
-    "row": 0,
-    "height": 2
-  },
-  "${graylog_dashboard_widget.test.widget_id}": {
-    "width": 1,
-    "col": 0,
-    "row": 0,
-    "height": 1
+positions = jsonencode({
+  "${graylog_dashboard_widget.test.widget_id}" = {
+    row    = 0
+    col    = 0
+    height = 1
+    width  = 1
   }
-}
-EOF
+  "${graylog_dashboard_widget.test2.widget_id}" = {
+    row    = 0
+    col    = 1
+    height = 2
+    width  = 2
+  }
+})
 ```
 
 ## graylog_extractor
@@ -247,16 +259,14 @@ json_type_extractor_config {
 TO BE
 
 ```tf
-  extractor_config = <<EOF
-{
-  "list_separator": ", ",
-  "kv_separator": "=",
-  "key_prefix": "visit_",
-  "key_separator": "_",
-  "replace_key_whitespace": false,
-  "key_whitespace_replacement": "_"
-}
-EOF
+extractor_config = jsonencode({
+  list_separator             = ", "
+  kv_separator               = "="
+  key_prefix                 = "visit_"
+  key_separator              = "_"
+  replace_key_whitespace     = false
+  key_whitespace_replacement = "_"
+})
 ```
 
 ### Change the attribute `.id` to `.extractor_id`
@@ -297,19 +307,16 @@ rotation_strategy {
 TO BE
 
 ```tf
-  retention_strategy = <<EOF
-{
-  "max_number_of_indices": 30,
-  "type": "org.graylog2.indexer.retention.strategies.DeletionRetentionStrategyConfig"
-}
-EOF
+retention_strategy = jsonencode({
+  max_number_of_indices = 20
+  type                  = "org.graylog2.indexer.retention.strategies.DeletionRetentionStrategyConfig"
+})
 
-  rotation_strategy = <<EOF
-{
-  "max_docs_per_index": 30000000,
-  "type": "org.graylog2.indexer.rotation.strategies.MessageCountRotationStrategyConfig"
-}
-EOF
+rotation_strategy = jsonencode({
+  max_docs_per_index = 20000000
+  max_size           = 0
+  type               = "org.graylog2.indexer.rotation.strategies.MessageCountRotationStrategyConfig"
+})
 ```
 
 ## graylog_input
@@ -331,14 +338,12 @@ attributes {
 TO BE
 
 ```tf
-  attributes = <<EOF
-{
-  "bind_address": "0.0.0.0",
-	"port": 12201,
-	"recv_buffer_size": 262144,
-	"decompress_size_limit": 8388608
-}
-EOF
+attributes = jsonencode({
+  bind_address          = "0.0.0.0"
+  port                  = 12201
+  recv_buffer_size      = 262144
+  decompress_size_limit = 8388608
+})
 ```
 
 ## graylog_stream_rule

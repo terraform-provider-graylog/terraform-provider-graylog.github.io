@@ -18,6 +18,21 @@ e.g,
 EOF
 ```
 
+Or using [jsonencode](https://www.terraform.io/docs/configuration/functions/jsonencode.html)
+
+
+```tf
+  extractor_config = jsonencode({
+    list_separator             = ", "
+    kv_separator               = "="
+    key_prefix                 = "visit_"
+    key_separator              = "_"
+    replace_key_whitespace     = false
+    key_whitespace_replacement = "_"
+  })
+```
+
+
 By adopting JSON string, there are some merits.
 
 For users
