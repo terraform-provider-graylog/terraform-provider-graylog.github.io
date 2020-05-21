@@ -1,6 +1,6 @@
-# graylog_collector
+# graylog_sidecar_collector
 
-* [Example](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/examples/v0.12/collector.tf)
+* [Example](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/examples/v0.12/sidecar_collector.tf)
 * [Source Code](https://github.com/terraform-provider-graylog/terraform-provider-graylog/blob/master/graylog/resource/sidecar/collector/resource.go)
 
 ## Argument Reference
@@ -28,9 +28,9 @@ None.
 
 ## Import
 
-`graylog_collector` can be imported using the Collector id, e.g.
+`graylog_sidecar_collector` can be imported using the Collector id, e.g.
 
 ```console
-$ terraform import graylog_collector.test 5c4acaefc9e77bbbbbbbbbbb
+$ terraform import graylog_sidecar_collector.test 5c4acaefc9e77bbbbbbbbbbb
 ```
 
