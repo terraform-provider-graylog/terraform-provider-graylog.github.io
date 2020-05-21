@@ -12,6 +12,7 @@
 * Resource
   * [graylog_alarm_callback](resources/alarm_callback.md)
   * [graylog_alert_condition](resources/alert_condition.md)
+  * [graylog_collector](resources/collector.md)
   * [graylog_dashboard](resources/dashboard.md)
   * [graylog_dashboard_widget](resources/dashboard_widget.md)
   * [graylog_dashboard_widget_positions](resources/dashboard_widget_positions.md)
