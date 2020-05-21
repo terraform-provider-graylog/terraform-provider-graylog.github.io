@@ -29,6 +29,7 @@
   * [graylog_pipeline_rule](resources/pipeline_rule.md)
   * [graylog_role](resources/role.md)
   * [graylog_sidecar_collector](resources/sidecar_collector.md)
+  * [graylog_sidecar_configuration](resources/sidecar_configuration.md)
   * [graylog_stream](resources/stream.md)
   * [graylog_stream_output](resources/stream_output.md)
   * [graylog_stream_rule](resources/stream_rule.md)
