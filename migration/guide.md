@@ -22,7 +22,7 @@ For detail of the changes of each resources, please see [here](migration/detail.
 ### api_version
 
 The default value of `api_version` is changed from `v2` to `v3`.
-Currently, we don't support only `v3`.
+Currently, we support only `v3`.
 If you use `v2`, please use go-graylog instead of this provider.
 
 ### Some attribute names are changed
