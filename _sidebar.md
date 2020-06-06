@@ -8,6 +8,7 @@
 * Data Source
   * [graylog_dashboard](data-sources/dashboard.md)
   * [graylog_index_set](data-sources/index_set.md)
+  * [graylog_sidecar](data-sources/sidecar.md)
   * [graylog_stream](data-sources/stream.md)
 * Resource
   * [graylog_alarm_callback](resources/alarm_callback.md)
@@ -30,6 +31,7 @@
   * [graylog_role](resources/role.md)
   * [graylog_sidecar_collector](resources/sidecar_collector.md)
   * [graylog_sidecar_configuration](resources/sidecar_configuration.md)
+  * [graylog_sidecars](resources/sidecars.md)
   * [graylog_stream](resources/stream.md)
   * [graylog_stream_output](resources/stream_output.md)
   * [graylog_stream_rule](resources/stream_rule.md)
