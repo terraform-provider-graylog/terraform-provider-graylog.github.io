@@ -10,7 +10,6 @@
 name | type
 --- | ---
 field | string
-value | string
 description | string
 type | int
 stream_id | string
@@ -19,6 +18,7 @@ stream_id | string
 
 name | default | type
 --- | --- | ---
+value |  | string
 inverted | | bool
 
 ## Attributes Reference
